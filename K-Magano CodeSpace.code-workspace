@@ -7,5 +7,7 @@
 		"path": "."
 	}
 ],
-  "settings": {}
+"settings": {
+	"liveServer.settings.multiRootWorkspaceName": "K-Magano-BCL2302_Naeem_KeorapesteMagano_ITW6"
+}
 }
