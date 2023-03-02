@@ -10,34 +10,25 @@
 
   <style>
    
-   /*Header and footer have the same design requests*/
-   header, footer{
+  body {
+      background:#00704A;
+      border-radius: 40px;
+      border: 10px solid aliceblue;
+      display: inline-flex;
+
+     
+    }
+   header {
       background-image: linear-gradient(#051937, #A8EB12);
       text-align: center;
       color: aliceblue;
-      padding: 5px 100px 5px 100px;
-      margin: 35px 400px 35px 400px;
-      border-radius: 40px;
       font-size: 35px;
+      padding: 5px;
+      margin: 20px;
+        
+      }  
 
-    }
 
-    body {
-      background-image: linear-gradient(#d695ef, #ff7cd8, #ff42c1, #6696fd, #6d41e8);
-      border: 10px solid blue;
-      
-    }
-
-    img {
-      max-width: auto;
-      position: relative;
-      border-radius: 50%;
-      border: 15px solid antiquewhite;
-      border-width: 20px;
-      top: 20px;
-      left: 20px;
-    }
-  
     /*Reduced my codes, all the elements with the same design, used only one block of code*/
     #Education, #Experience, #Skills {
       background-image: linear-gradient(120deg, #051937, #A8EB12);
@@ -51,13 +42,14 @@
       text-shadow: black 1px -3px 5px;
       text-align: center;}
 
-
-   
-
     h3 {
       font-size: 28px;
       background-color: #B0A8B9;
       color: black;
+      padding: 10px 100px 10px 100px;
+      margin: 35px 500px 35px 500px;
+      text-align: center;
+      border-radius: 50%;
       }
 
     p, #li {
@@ -65,28 +57,46 @@
       font-family: system-ui, -apple-system, BlinkMacSystemFont,
         'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
         'Open Sans', 'Helvetica Neue', sans-serif;
-        
-    }
+      text-align: center;
+      display:flex;
+      flex-wrap: wrap;
+      flex-flow: column;
+       
+       }
 
     aside {
       background-image: linear-gradient(#051937, #A8EB12);
       border-radius: 40px;
+      border: 10px solid aliceblue;
+      text-align: left;
       font-family: sans-serif;
       font-size: 30px;
       font-style: italic;
-      padding: 5px 100px 5px 100px;
-      margin: 35px 400px 35px 400px;
-      text-shadow: black 1px -3px 5px;
-      text-align: left;
-
+      padding: 4px 50px 5px 100px;
+      margin: 35px 600px 35px 400px;
+      
+           
+    }
+    img {
+      
+      position: static;
+      border-radius: 50%;
+      border: 15px solid antiquewhite;
+      top: 20px;
+      left: 20px;
+      
     }
 
-    .menu {
+  .menu {
       color: blueviolet;
       font-size: 25px;
       font-family: 'Gill Sans', 'Gill Sans MT',
         Calibri, 'Trebuchet MS', sans-serif;
-
+      background-color: #B0A8B9;
+      padding: 1px 10px 1px 10px;
+      margin: 10% ;
+      text-align: center;
+      transition: 0.3s;
     }
 
     .menu:hover {
@@ -100,7 +110,6 @@
       font-size: 25px ;
     }
 
-
   </style>
 </head>
 
@@ -108,22 +117,26 @@
   
   <header>
     <h1>Keorapetse Magano</h1>
+    
+    <img src="images/k.magano.jpg" alt="Picture of K.Magano" width=300px height=300px></img>
     <p>An introductory personal statement</p>
+    
+    <h2 id="Contact">Contact</h2>
+    <nav>
+      <ul>
+      <li><a class="menu" href="#Education">Education</a></li>
+      <li><a class="menu" href="#Experience">Experience</a></li>
+      <li><a class="menu" href="#Skills">Skills</a></li>
+    </ul>
+  </nav>
+      <div>
+        <span><a href="https://www.linkedin.com/in/keorapetse-magano-320ab538/" target="_blank" id="LinkedIn">LinkedIn</a></span>      
+    </div>
   </header>
 
   <section>
-    <aside>
-      <img src="images/k.magano.jpg" alt="Picture of K.Magano" width=300px height=300px></img>
-      <ul>
-        <li><a class="menu" href="#Education">Education</a></li>
-        <li><a class="menu" href="#Experience">Experience</a></li>
-        <li><a class="menu" href="#Skills">Skills</a></li>
-      </ul>
-    </aside>
-
-    <article>
-
-      <h2 id="Education">Education</h2>
+    
+    <h2 id="Education">Education</h2>
 
       <h3>Intro to Web at <a href="https://www.codespace.co.za/" target="_blank" id="CS">CodeSpace Academy</a></h3>
 
@@ -168,18 +181,9 @@
         <li id="li">Skill 4</li>
       </ul>
     
-
-    </article>
-
   </section>
 
-  <footer>
-    <h2 id="Contact">Contact</h2>
 
-    <a href="https://www.linkedin.com/in/keorapetse-magano-320ab538/" target="_blank" id="LinkedIn">LinkedIn</a>
-  </footer>
-
-  
 </body>
 
 </html>
